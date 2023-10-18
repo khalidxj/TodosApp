@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyTodos</title>
+
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <link rel="stylesheet" href="../CSS/todo.css">
+    </head>
+
+    <body>
+
+        <!-- //////// navigation //////// -->
+
+       <header>
+
+            <h1 class="heading"><a class="heading-link" href="index.html">MyTodos</a></h1>
+
+            <!-- for the navigation links -->
+            <nav>
+                <!-- unorder list -->
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="inbox.html">Inbox</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- ////// Main /////// -->
+        
+        <div class="todo-main">
+
+            <!-- side bar -->
+            <aside class="todo-aside">
+
+                <!-- title of side bar-->
+                <h2 class="menu">Menu</h2>
+
+                <!-- tasks container -->
+                <div class="tasks">tasks</div>
+
+                <!-- unorder list-->
+                <ul class="tasks-list">
+                    <li><a href="today.html">Today</a> <span>12</span></li>
+                    <li><a href="upcoming.html">Upcoming</a> <span>3</span></li>
+                </ul>
+
+                <!-- unorder list-->
+                <div class="lists">Lists</div>
+                <ul class="lists-list">
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="college.html">College</a></li>
+                </ul>
+
+                <!-- unorder list-->
+                <div class="projects">Projects</div>
+                <ul class="projects-list">
+                    <li>Todo 1</li>
+                    <li>Todo 2</li>
+                    <li>Math todo</li>
+                    <button> + New Project</button>
+                </ul>
+
+            </aside>
+
+            <div class="todos-list">
+
+                <h1>Today</h1>
+
+                <!-- form to send  the todo-->
+                <form action="#">
+                    <!-- input of type text that contains the content of the todo-->
+                    <input type="text" name="todo-in" id="todo-in" placeholder="+  Add New Task">
+                </form>
+
+
+                <div class="todo">
+                    <input type="checkbox" name="todo-check" id="todo-check">
+                    <span class="todo-title">Solve homework 1 of CPCS492</span>
+                    <button class="todo-details"> > </button>
+                </div>
+
+
+
+                <div class="todo">
+                    <input type="checkbox" name="todo-check" id="todo-check">
+                    <span class="todo-title">Solve homework 1 of CPCS492</span>
+                    <button class="todo-details"> > </button>
+                </div>
+
+                <div class="todo">
+                    <input type="checkbox" name="todo-check" id="todo-check">
+                    <span class="todo-title">Solve homework 1 of CPCS492</span>
+                    <button class="todo-details"> > </button>
+                </div>
+
+                <div class="todo">
+                    <input type="checkbox" name="todo-check" id="todo-check">
+                    <span class="todo-title">Solve homework 1 of CPCS492</span>
+                    <button class="todo-details"> > </button>
+                </div>
+
+                <div class="todo">
+                    <input type="checkbox" name="todo-check" id="todo-check">
+                    <span class="todo-title">Solve homework 1 of CPCS492</span>
+                    <button class="todo-details"> > </button>
+                </div>
+
+
+            </div>
+
+
+            <!-- container for editing the todo -->
+            <div class="todo-edit">
+
+                <!-- title -->
+                <h2>Task</h2>
+
+                <!-- form for any editing inputs-->
+                <form action="#">
+                    <input type="text" class="todo-edit-title" placeholder="Name of the task">
+                    </input>
+
+                    <!-- text area for the todo description-->
+                    <textarea type="text" class="todo-edit-description" placeholder="Description"></textarea>
+                    
+
+                    <!-- the list of the todo container-->
+                    <div class="todo-edit-list">
+
+                        <!-- label for the input -->
+                        <label for="todo-edit-list-select"> List</label>
+
+                        <!-- select element of the lists, and options element inside it-->
+                        <select value="personal" id="todo-edit-list-select">
+                            <option value="Personal">Personal</option>
+                            <option value="work">Work</option>
+                            <option value="college">College</option>
+                        </select>
+                    </div>
+
+                    <!-- selecting the time, we used the type datatime-local as an input-->
+                    <div class="todo-edit-time">
+                        <label for="dueDateTime">Due time</label>
+                        <input type="datetime-local" id="dueDateTime" name="dueDateTime">
+                    </div>
+
+                    <!-- buttons -->
+                    <div class="todo-edit-btns">
+                        <button class="todo-edit-btn delete-btn">Delete Task</button>
+                        <button class="todo-edit-btn save-btn">Save Changes</button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+    </body>
+
+</html>

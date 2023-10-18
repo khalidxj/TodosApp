@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>MyTodos</title>
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/settings.css">
+    </head>
+
+    <body>
+        <!-- //////// navigation //////// -->
+
+       <header>
+
+            <h1 class="heading"><a class="heading-link" href="index.html">MyTodos</a></h1>
+
+            <!-- for the navigation links -->
+            <nav>
+                <!-- unorder list -->
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="inbox.html">Inbox</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="settings-container">
+            <div class="setting">
+                <label for="theme">Theme:</label>
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+
+            <div class="setting">
+                <label for="notifications">Notifications:</label>
+                <input type="checkbox" id="notifications" checked>
+            </div>
+
+            <div class="setting">
+                <label for="font-size">Font Size:</label>
+                <input type="range" id="font-size" min="12" max="24" step="2" value="16">
+            </div>
+
+            <div class="setting">
+                <button class="save-button">Save Settings</button>
+            </div>
+        </div>
+
+
+
+    </body>
+
+</html>

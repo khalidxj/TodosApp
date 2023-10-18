@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="../CSS/notes.css">
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <title>MyTodos</title>
+
+    </head>
+
+    <body>
+
+       <!-- //////// navigation //////// -->
+
+       <header>
+
+        <h1 class="heading"><a class="heading-link" href="index.html">MyTodos</a></h1>
+
+        <!-- for the navigation links -->
+        <nav>
+            <!-- unorder list -->
+            <ul>
+                <li><a href="projects.html">Projects</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="inbox.html">Inbox</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+        <!-- container of all the elements -->
+        <div class="container">
+
+            <!-- sidebar div to group the saved notes at-->
+            <div class="sidebar">
+                <h2>Saved Notes</h2>
+                <div class="note">Note 1: This is a sample note.</div>
+                <div class="note">Note 2: Another example note.</div>
+            </div>
+
+            <!-- container for notes textarea -->
+            <div class="notes">
+                <h2>Add a Note</h2>
+                <textarea id="note-text" rows="4" cols="50"></textarea><br>
+                <button class="add-button">Save</button>
+            </div>
+
+        </div>
+    </body>
+
+</html>

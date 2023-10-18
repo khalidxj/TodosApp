@@ -1,0 +1,93 @@
+<!-- 
+    Abdullah Alsaaedi 1936031
+    Khalid Alghamdi <2037040>
+    <section>
+    2023/10/16
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <link rel="stylesheet" href="../CSS/todo.css">
+        <link rel="stylesheet" href="../CSS/inbox.css">
+        <title>MyTodos</title>
+    </head>
+
+    <body>
+
+        <!-- //////// navigation //////// -->
+
+        <header>
+
+            <h1 class="heading"><a class="heading-link" href="index.html">MyTodos</a></h1>
+
+            <!-- for the navigation links -->
+            <nav>
+                <!-- unorder list -->
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="inbox.html">Inbox</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <div class="todos-list">
+
+            <!-- header 1 -->
+            <h1>All your To-do's</h1>
+
+            <!-- Form to send the data of todos into the back end-->
+            <form action="#">
+                <input type="text" name="todo-in" id="todo-in" placeholder="+  Add New Task">
+            </form>
+
+
+            <!-- each todo container -->
+            <div class="todo">
+                <!-- check box to check the todo -->
+                <input type="checkbox" name="todo-check" id="todo-check">
+
+                <!-- todo title-->
+                <span class="todo-title">Solve homework 1 of CPCS492</span>
+
+                <!-- button to open the details of the to do-->
+                <button class="todo-details"> > </button>
+            </div>
+
+            <div class="todo">
+                <input type="checkbox" name="todo-check" id="todo-check">
+                <span class="todo-title">Solve homework 1 of CPCS492</span>
+                <button class="todo-details"> > </button>
+            </div>
+
+            <div class="todo">
+                <input type="checkbox" name="todo-check" id="todo-check">
+                <span class="todo-title">Solve homework 1 of CPCS492</span>
+                <button class="todo-details"> > </button>
+            </div>
+
+            <div class="todo">
+                <input type="checkbox" name="todo-check" id="todo-check">
+                <span class="todo-title">Solve homework 1 of CPCS492</span>
+                <button class="todo-details"> > </button>
+            </div>
+
+            <div class="todo">
+                <input type="checkbox" name="todo-check" id="todo-check">
+                <span class="todo-title">Solve homework 1 of CPCS492</span>
+                <button class="todo-details"> > </button>
+            </div>
+
+        </div>
+        
+    </body>
+
+</html>
